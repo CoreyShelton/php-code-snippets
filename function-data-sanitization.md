@@ -36,7 +36,9 @@ function sanitize($input) {
     return $output;
 }
 ```
-    
+
+***
+
 ### Use Case
 
 #### HTML
