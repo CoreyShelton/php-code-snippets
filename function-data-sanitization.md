@@ -52,6 +52,9 @@ function sanitize($input) {
 ```
 #### PHP
 ```php
-// Sanitize the input from the 'first_name' form field
-$fname = sanitize($_REQUEST['first_name']);
+// If the submit button is hit and the 'first_name' input is not empty
+if ( isset($_REQUEST['submit']) && !empty($_REQUEST['first_name']) ) :
+    // Sanitize the input from the 'first_name' form field
+    $fname = sanitize($_REQUEST['first_name']);
+endif;
 ```
